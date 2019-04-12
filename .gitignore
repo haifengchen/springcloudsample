@@ -1,0 +1,4 @@
+.idea/
+config-service/.mvn/
+config-service/mvnw
+config-service/mvnw.cmd
