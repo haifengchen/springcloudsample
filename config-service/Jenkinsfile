@@ -14,7 +14,7 @@ node {
     }
     stage('Image') {
       dir ('config-service') {
-        docker.withRegistry('https://localhost:8081') {
+        docker.withRegistry('https://192.168.2.15:5000') {
           def app = docker.build "haifeng/config-service:${env.version}"
           app.push()
         }
