@@ -1,5 +1,5 @@
 node {
-  withMaven(maven:'M3') {
+  withMaven() {
     stage('Checkout') {
       git url: 'https://github.com/haifengchen/springcloudsample.git', credentialsId: 'haifeng-github', branch: 'master'
     }
