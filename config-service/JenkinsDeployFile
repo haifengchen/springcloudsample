@@ -1,0 +1,10 @@
+create jenkins pipeline project
+
+
+node{
+    stage('deploy'){
+      sshagent (credentials: ['deploy-dev']) {
+        sh 'ssh -o StrictHostKeyChecking=no windstone@192.168.2.23 -A docker run -d -p 8088:8088 192.168.2.15:5000/haifeng/config-service:0.0.1-SNAPSHOT '
+      }
+    }
+}
