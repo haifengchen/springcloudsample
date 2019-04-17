@@ -8,3 +8,6 @@ discovery-service/.mvn/
 employee-service/mvnw
 employee-service/mvnw.cmd
 employee-service/.mvn/
+department-service/mvnw
+department-service/mvnw.cmd
+department-service/.mvn/
