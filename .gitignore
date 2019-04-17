@@ -2,3 +2,9 @@
 config-service/.mvn/
 config-service/mvnw
 config-service/mvnw.cmd
+discovery-service/mvnw
+discovery-service/mvnw.cmd
+discovery-service/.mvn/
+employee-service/mvnw
+employee-service/mvnw.cmd
+employee-service/.mvn/
