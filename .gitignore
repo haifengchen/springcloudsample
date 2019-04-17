@@ -11,3 +11,6 @@ employee-service/.mvn/
 department-service/mvnw
 department-service/mvnw.cmd
 department-service/.mvn/
+organization-service/mvnw
+organization-service/mvnw.cmd
+organization-service/.mvn/
