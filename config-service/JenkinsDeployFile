@@ -8,3 +8,9 @@ node{
       }
     }
 }
+
+TODO   kill the original docker container
+
+
+TODO use docker-compose   to start up the composite containers
+
