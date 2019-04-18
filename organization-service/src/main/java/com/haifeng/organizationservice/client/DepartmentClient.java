@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "department-service")
 public interface DepartmentClient {
 
-	@GetMapping("/department/organization/{organizationId}")
+	@GetMapping("/organization/{organizationId}")
 	public List<Department> findByOrganization(@PathVariable("organizationId") Long organizationId);
 	
-	@GetMapping("/department/organization/{organizationId}/with-employees")
+	@GetMapping("/organization/{organizationId}/with-employees")
 	public List<Department> findByOrganizationWithEmployees(@PathVariable("organizationId") Long organizationId);
 	
 }

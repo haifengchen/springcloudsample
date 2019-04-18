@@ -14,3 +14,6 @@ department-service/.mvn/
 organization-service/mvnw
 organization-service/mvnw.cmd
 organization-service/.mvn/
+proxy-service/.mvn/
+proxy-service/mvnw
+proxy-service/mvnw.cmd
