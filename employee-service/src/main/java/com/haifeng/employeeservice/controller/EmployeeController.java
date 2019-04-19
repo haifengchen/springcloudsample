@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.List;
 
 @RestController
@@ -35,7 +36,8 @@ public class EmployeeController {
     }
 
     @GetMapping("/department/{departmentId}")
-    public List findByDepartment(@PathVariable("departmentId") Long departmentId) {
+    public List findByDepartment(@PathVariable("departmentId") Long departmentId, Principal principal) {
+        log.debug(principal.getName());
         log.info("Employee find: departmentId={}", departmentId);
         return repository.findByDepartment(departmentId);
     }

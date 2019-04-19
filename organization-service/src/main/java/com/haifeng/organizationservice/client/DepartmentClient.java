@@ -2,12 +2,14 @@ package com.haifeng.organizationservice.client;
 
 import java.util.List;
 
+import com.haifeng.organizationservice.config.ClientConfiguration;
 import com.haifeng.organizationservice.model.Department;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 
+//@FeignClient(name = "department-service" , configuration = ClientConfiguration.class)
 @FeignClient(name = "department-service")
 public interface DepartmentClient {
 

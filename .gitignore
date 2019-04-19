@@ -17,3 +17,6 @@ organization-service/.mvn/
 proxy-service/.mvn/
 proxy-service/mvnw
 proxy-service/mvnw.cmd
+oauth-service/.mvn/
+oauth-service/mvnw
+oauth-service/mvnw.cmd

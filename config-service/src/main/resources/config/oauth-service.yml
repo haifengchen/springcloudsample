@@ -1,0 +1,18 @@
+server:
+  port: 7080
+
+spring:
+  redis:
+    host: 127.0.0.1
+    database: 0
+
+logging:
+  level:
+    org:
+      springframework:
+        security: debug
+        
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8061/eureka/

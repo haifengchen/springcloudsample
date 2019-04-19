@@ -1,5 +1,6 @@
 package com.haifeng.departmentservice.client;
 
+import com.haifeng.departmentservice.config.ClientConfiguration;
 import com.haifeng.departmentservice.model.Employee;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
