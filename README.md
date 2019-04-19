@@ -14,5 +14,10 @@ oauth-service need start redis locally
 swagger-ui  oauth:  client_1/123456
 
 
-zuul doesn't integrate security,  let oauth token pass to detail microservices.
-If needed, integrate oauth with zuul, then check the token for detail service twice.
+/**
+*zuul doesn't integrate security,  let oauth token pass to detail microservices.
+*If needed, integrate oauth with zuul, then check the token for detail service twice.
+**/
+
+integrate zuul with oauth security 
+Private opinion, in real project, we can only expose zuul port publicly only, and hide microservices and remove security check for each detail services to improve the efficiency of communication to each other.

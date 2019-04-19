@@ -12,6 +12,7 @@ logging:
               
 zuul:
   routes:
+    sensitiveHeaders: Cookie,Set-Cookie
     department:
       path: /department/**
       serviceId: department-service
@@ -30,7 +31,7 @@ zuul:
 security:
     oauth2:
         resource:
-            token-info-uri: http://localhost:8060/uaa/oauth/check_token
+            token-info-uri: http://localhost:8060/oauth/check_token
         client:
             client-id: client_1
             client-secret: 123456
